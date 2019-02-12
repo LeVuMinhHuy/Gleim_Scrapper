@@ -18,11 +18,13 @@ Secondly, we've already had data which scrapped. Put them into Excel Column B.
 
 Then, we take JSON file from /Network in ```Ctrl + Shift + I```
 
-After that, we run ```extractFromJson.py```  and have a ```cia_explanation.txt```. Copy that and put into Excel Column C.
+After that, we run ```extractFromJson.py```  and have a ```cia_explanation.txt```. Copy that and put into Excel Column D.
 
 Run ```extractTitle.py``` and take a ```cia_title.txt```. Copy that and put into Excel Column A.
 
-In Column D, we input ```=CONCATENATE(A1, "<br><br>" , B1, "<br><br>", C1)``` then scroll all of rows we have.
+Run ```extractNumber.py``` and take a ```cia_number.txt```. Copy that and put into Excel Column C.
+
+In Column D, we input ```=CONCATENATE(C1, " | " ,A1, "<br><br>" , B1, "<br><br>", D1)``` then scroll all of rows we have.
 
 Finally, copy all column D and put into some text editor (I use Sublime, we can use notepad, etc.) and save as ```output1.html```
 
